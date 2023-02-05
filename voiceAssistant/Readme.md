@@ -49,7 +49,8 @@ Twilio is used for making calls and messages. To install this module type the be
  
 ### Requests:
 Requests is used for making GET and POST requests. To install this module type the below command in the terminal.
-pip install requests 
+ 
+```pip install requests``` 
  
 ### BeautifulSoup:
 Beautiful Soup is a library that makes it easy to scrape information from web pages. To install this module type the below command in the terminal.
