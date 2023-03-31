@@ -11,7 +11,7 @@ print(df, df['price'])
 
 # Plot the data
 plt.scatter(df.area, df.price, color='red', marker='+')
-# plt.show()
+plt.show()
 
 # Create a linear regression model
 model = linear_model.LinearRegression()
