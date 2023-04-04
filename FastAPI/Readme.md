@@ -1,4 +1,8 @@
-# Install dependencies
+# FASTAPI
+
+FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
+
+## Install dependencies
 
 ```sh
 pip install fastapi[all]
@@ -8,7 +12,7 @@ OR
 pip install fastapi "uvicorn[standard]"
 ```
 
-# Start server
+## Start server
 ```sh
 uvicorn <filename>:<fastapi-object-name> --reload
 ```
