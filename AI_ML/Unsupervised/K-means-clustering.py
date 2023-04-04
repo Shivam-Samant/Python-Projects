@@ -13,11 +13,11 @@ print(df.head())
 print(df.shape)
 
 # scatter plot -> age vs income
-# plt.scatter(df.Age, df['Income($)'], color="r", marker='+')
-# plt.xlabel('Age')
-# plt.ylabel('Income')
-# plt.title("Age vs Income")
-# plt.show()
+plt.scatter(df.Age, df['Income($)'], color="r", marker='+')
+plt.xlabel('Age')
+plt.ylabel('Income')
+plt.title("Age vs Income")
+plt.show()
 
 
 SSE = []
@@ -28,15 +28,15 @@ for i in range(1, 10):
 
     # fitting cluster
     y_pred = kmeans.fit_predict(df[['Age', 'Income($)']])
-    # print(y_pred)
+    print(y_pred)
 
     # concat cluster data
     df_y_pred = pd.Series(y_pred, name="Cluster")
     df1 = pd.concat([df, df_y_pred], axis=1)
-    # print(df1.head())
+    print(df1.head())
 
     # kmeans cluster centroid
-    # print(kmeans.cluster_centers_)
+    print(kmeans.cluster_centers_)
 
     # intertia -> tell mean squared error
     intertia = kmeans.inertia_
